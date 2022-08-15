@@ -23,7 +23,7 @@
 ---
   |PATH       |METHOD     |object structure       | comment       |
   |---        |---        |---                    |---            |
-  |`/user/:id`|`GET`|`body{"date"}, res:{"user": {"id":45, "fullName":"John Doe", "habits": {"water": {"streak": 5, "frequency":"monthly"}}}}`|N/A|
+  |`/user/:username`|`GET`|`body{"date": [current date], "credentials": {"username":[username], "password":[pass]}, res:{"user": {"id":45, "fullName":"John Doe", "habits": {"water": {"streak": 5, "frequency":"monthly"}}}}`|N/A|
   |`/new`|`POST`|`body: {"habit": "drink water", "userId": 34, "loggedIn": true}`, `response: {"created": true}` |N/A|
   |`/completed`|`POST`|`body: {"habit": "drink water", "userId": 34, "loggedIn": true, "dateClicked": "12-03-2022"}`, `res: {"created": true}` |N/A|
 
